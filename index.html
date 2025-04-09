@@ -3,172 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <style>
-  body {
-    background-color: #f8f9fa;
-  }
-  .code-box {
-    background-color: #212529;
-    color: #f8f9fa;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    font-family: monospace;
-    white-space: pre-wrap;
-  }
-  .section-title {
-    margin-top: 2rem;
-  }
-  .example-box {
-    margin-bottom: 2rem;
-  }
-  .explanation {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 0.5rem;
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 </style>
-</head>
 <body>
-<div class="container py-5">
-  <h1 class="text-center mb-4">Bootstrap Grid Guide</h1>
+  <div class="container text-center">
+    <div class="card shadow-lg p-4 rounded-4">
+      <h1 class="mb-4">📚 Bootstrap Guide</h1>
 
-  <!-- 1. Basic Grid -->
-  <section class="example-box">
-    <h3 class="section-title">1. Basic Column Grid</h3>
-    <p class="explanation">Bootstrap grids use a column system. You can divide your layout into columns using classes like <code>col-4</code>.</p>
-    <div class="row text-center">
-      <div class="col-4 bg-primary text-white py-2">col-4</div>
-      <div class="col-4 bg-success text-white py-2">col-4</div>
-      <div class="col-4 bg-danger text-white py-2">col-4</div>
-    </div>
-    <div class="code-box mt-3">
-&lt;div class="row"&gt;
-&lt;div class="col-4"&gt;col-4&lt;/div&gt;
-&lt;div class="col-4"&gt;col-4&lt;/div&gt;
-&lt;div class="col-4"&gt;col-4&lt;/div&gt;
-&lt;/div&gt;
-    </div>
-  </section>
-
-  <!-- 2. Responsive Grid -->
-  <section class="example-box">
-    <h3 class="section-title">2. Responsive Grid</h3>
-    <p class="explanation">You can make grids responsive by using breakpoint-specific column classes like <code>col-sm-6</code> or <code>col-md-4</code> to change layouts across screen sizes.</p>
-    <div class="row text-center">
-      <div class="col-sm-6 col-md-4 bg-info text-white py-2">col-sm-6 col-md-4</div>
-      <div class="col-sm-6 col-md-4 bg-warning text-dark py-2">col-sm-6 col-md-4</div>
-      <div class="col-sm-12 col-md-4 bg-secondary text-white py-2">col-sm-12 col-md-4</div>
-    </div>
-    <div class="code-box mt-3">
-&lt;div class="row"&gt;
-&lt;div class="col-sm-6 col-md-4"&gt;col-sm-6 col-md-4&lt;/div&gt;
-&lt;div class="col-sm-6 col-md-4"&gt;col-sm-6 col-md-4&lt;/div&gt;
-&lt;div class="col-sm-12 col-md-4"&gt;col-sm-12 col-md-4&lt;/div&gt;
-&lt;/div&gt;
-    </div>
-  </section>
-
-  <!-- 3. Nested Grid -->
-  <section class="example-box">
-    <h3 class="section-title">3. Nested Grid</h3>
-    <p class="explanation">You can nest rows and columns inside other columns to build more complex layouts.</p>
-    <div class="row">
-      <div class="col-md-6 bg-light border">
-        <div class="row text-center">
-          <div class="col-6 bg-success text-white py-2">Nested col-6</div>
-          <div class="col-6 bg-danger text-white py-2">Nested col-6</div>
-        </div>
-      </div>
-      <div class="col-md-6 bg-light border text-center py-2">
-        col-md-6
+      <div class="d-grid gap-3 col-6 mx-auto">
+        <a href="grid.html" class="btn btn-primary btn-lg rounded-pill">Grid</a>
+        <a href="button.html" class="btn btn-primary btn-lg rounded-pill">Button</a>
+        <a href="card.html" class="btn btn-primary btn-lg rounded-pill">Card</a>
+        <a href="typography.html" class="btn btn-primary btn-lg rounded-pill">Typography</a>
+        <a href="table.html" class="btn btn-primary btn-lg rounded-pill">Table</a>
+        <a href="form.html" class="btn btn-primary btn-lg rounded-pill">Form</a>
+        <a href="Navigation.html" class="btn btn-primary btn-lg rounded-pill">Navigation</a>
       </div>
     </div>
-    <div class="code-box mt-3">
-&lt;div class="row"&gt;
-&lt;div class="col-md-6"&gt;
-  &lt;div class="row"&gt;
-    &lt;div class="col-6"&gt;Nested col-6&lt;/div&gt;
-    &lt;div class="col-6"&gt;Nested col-6&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="col-md-6"&gt;col-md-6&lt;/div&gt;
-&lt;/div&gt;
-    </div>
-  </section>
-
-  <!-- 4. Column Offsets -->
-  <section class="example-box">
-    <h3 class="section-title">4. Column Offsets</h3>
-    <p class="explanation">Offsets let you shift columns to the right using classes like <code>offset-md-2</code>.</p>
-    <div class="row text-center">
-      <div class="col-md-4 offset-md-2 bg-warning text-dark py-2">offset-md-2</div>
-      <div class="col-md-4 bg-info text-white py-2">col-md-4</div>
-    </div>
-    <div class="code-box mt-3">
-&lt;div class="row"&gt;
-&lt;div class="col-md-4 offset-md-2"&gt;offset-md-2&lt;/div&gt;
-&lt;div class="col-md-4"&gt;col-md-4&lt;/div&gt;
-&lt;/div&gt;
-    </div>
-  </section>
-
-  <!-- 5. Column Ordering -->
-  <section class="example-box">
-    <h3 class="section-title">5. Column Ordering</h3>
-    <p class="explanation">Use <code>order-*</code> classes to rearrange the visual order of columns without changing the HTML structure.</p>
-    <div class="row text-center">
-      <div class="col order-3 bg-primary text-white py-2">First Visually</div>
-      <div class="col order-1 bg-danger text-white py-2">Third Visually</div>
-      <div class="col order-2 bg-success text-white py-2">Second Visually</div>
-    </div>
-    <div class="code-box mt-3">
-&lt;div class="row"&gt;
-&lt;div class="col order-3"&gt;First Visually&lt;/div&gt;
-&lt;div class="col order-1"&gt;Third Visually&lt;/div&gt;
-&lt;div class="col order-2"&gt;Second Visually&lt;/div&gt;
-&lt;/div&gt;
-    </div>
-  </section>
-
-  <!-- 6. Alignment (Vertical + Horizontal) -->
-  <section class="example-box">
-    <h3 class="section-title">6. Alignment (Vertical & Horizontal)</h3>
-    <p class="explanation">You can align content vertically and horizontally using Bootstrap’s Flexbox utilities like <code>align-items-center</code> and <code>justify-content-end</code>.</p>
-    <div class="row align-items-center" style="height: 150px; background: #e9ecef;">
-      <div class="col-4 bg-primary text-white py-2">Start</div>
-      <div class="col-4 d-flex justify-content-center align-items-center bg-success text-white" style="height: 100%;">Center</div>
-      <div class="col-4 d-flex justify-content-end align-items-end bg-danger text-white" style="height: 100%;">End</div>
-    </div>
-    <div class="code-box mt-3">
-&lt;div class="row align-items-center" style="height: 150px;"&gt;
-&lt;div class="col-4"&gt;Start&lt;/div&gt;
-&lt;div class="col-4 d-flex justify-content-center align-items-center"&gt;Center&lt;/div&gt;
-&lt;div class="col-4 d-flex justify-content-end align-items-end"&gt;End&lt;/div&gt;
-&lt;/div&gt;
-    </div>
-  </section>
-
-  <!-- 7. No Gutters -->
-  <section class="example-box">
-    <h3 class="section-title">7. No Gutters</h3>
-    <p class="explanation">To remove space (gutters) between columns, use the <code>g-0</code> class on the row.</p>
-    <div class="row g-0 text-center">
-      <div class="col-6 bg-info text-white py-2">col-6 no gutter</div>
-      <div class="col-6 bg-warning text-dark py-2">col-6 no gutter</div>
-    </div>
-    <div class="code-box mt-3">
-&lt;div class="row g-0"&gt;
-&lt;div class="col-6"&gt;col-6 no gutter&lt;/div&gt;
-&lt;div class="col-6"&gt;col-6 no gutter&lt;/div&gt;
-&lt;/div&gt;
-    </div>
-  </section>
-
-</div>
-
+  </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
 </body>

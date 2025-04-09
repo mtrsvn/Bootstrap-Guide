@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .code-box {
+      background-color: #212529;
+      color: #f8f9fa;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-family: monospace;
+      white-space: pre-wrap;
+      margin-top: 2rem;
+    }
+    .section-title {
+      margin-top: 2rem;
+    }
+    .example-box {
+      margin-bottom: 3rem;
+    }
+    .card-deck {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center mb-4">Card Guide</h1>
+
+    <!-- 1. Card 1 -->
+    <section class="example-box">
+      <h3 class="section-title">1. Basic Card</h3>
+      <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+          <img src="img/card.png" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Card title 1</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="code-box">
+        <pre>
+&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;img src="img/card.png" class="card-img-top" alt="Card image"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card title 1&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
+    </section>
+
+    <!-- 2. Card 2 -->
+    <section class="example-box">
+      <h3 class="section-title">2. Card with List Group</h3>
+      <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+          <img src="img/card.png" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Card with List</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="code-box">
+        <pre>
+&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;img src="img/card.png" class="card-img-top" alt="Card image"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card with List&lt;/h5&gt;
+    &lt;ul class="list-group list-group-flush"&gt;
+      &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;
+      &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+      &lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href="#" class="btn btn-primary mt-3"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
+    </section>
+
+    <!-- 3. Card 3 -->
+    <section class="example-box">
+      <h3 class="section-title">3. Card with Header and Footer</h3>
+      <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            Featured
+          </div>
+          <img src="img/card.png" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Card with Header</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
+        </div>
+      </div>
+      <div class="code-box">
+        <pre>
+&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;div class="card-header"&gt;Featured&lt;/div&gt;
+  &lt;img src="img/card.png" class="card-img-top" alt="Card image"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card with Header&lt;/h5&gt;
+    &lt;p class="card-text"&gt;This is a wider card with supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="card-footer text-muted"&gt;2 days ago&lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
+    </section>
+
+    <!-- 4. Card 4 -->
+    <section class="example-box">
+      <h3 class="section-title">4. Card with Footer</h3>
+      <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+          <img src="img/card.png" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Card title 4</h5>
+            <p class="card-text">This is some more content for the card footer example.</p>
+          </div>
+          <div class="card-footer text-muted">
+            1 hour ago
+          </div>
+        </div>
+      </div>
+      <div class="code-box">
+        <pre>
+&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;img src="img/card.png" class="card-img-top" alt="Card image"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card title 4&lt;/h5&gt;
+    &lt;p class="card-text"&gt;This is some more content for the card footer example.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="card-footer text-muted"&gt;1 hour ago&lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
+    </section>
+
+    <!-- 5. Card 5 -->
+    <section class="example-box">
+      <h3 class="section-title">5. Card with Action</h3>
+      <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+          <img src="img/card.png" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Card title 5</h5>
+            <p class="card-text">This card has some different content for variety. The button can lead to a page or action.</p>
+            <a href="#" class="btn btn-success">Action</a>
+          </div>
+        </div>
+      </div>
+      <div class="code-box">
+        <pre>
+&lt;div class="card" style="width: 18rem;"&gt;
+  &lt;img src="img/card.png" class="card-img-top" alt="Card image"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card title 5&lt;/h5&gt;
+    &lt;p class="card-text"&gt;This card has some different content for variety. The button can lead to a page or action.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-success"&gt;Action&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
+    </section>
+
+  </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</body>
+</html>

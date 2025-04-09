@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        body {
+          background-color: #f8f9fa;
+        }
+        .code-box {
+          background-color: #212529;
+          color: #f8f9fa;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          font-family: monospace;
+          white-space: pre-wrap;
+          margin-top: 2rem;
+        }
+        .section-title {
+          margin-top: 2rem;
+        }
+        .example-box {
+          margin-bottom: 3rem;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container py-5">
+        <h1 class="text-center mb-4">Table Guide</h1>
+    
+        <!-- 1. Basic Table -->
+        <section class="example-box">
+          <h3 class="section-title">1. Basic Table</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">City</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>New York</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Samuel Brown</td>
+                <td>35</td>
+                <td>Chicago</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="code-box">
+            <pre>
+    &lt;table class="table"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope="col"&gt;#&lt;/th&gt;
+          &lt;th scope="col"&gt;Name&lt;/th&gt;
+          &lt;th scope="col"&gt;Age&lt;/th&gt;
+          &lt;th scope="col"&gt;City&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;1&lt;/th&gt;
+          &lt;td&gt;John Doe&lt;/td&gt;
+          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;New York&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;2&lt;/th&gt;
+          &lt;td&gt;Jane Smith&lt;/td&gt;
+          &lt;td&gt;25&lt;/td&gt;
+          &lt;td&gt;Los Angeles&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;3&lt;/th&gt;
+          &lt;td&gt;Samuel Brown&lt;/td&gt;
+          &lt;td&gt;35&lt;/td&gt;
+          &lt;td&gt;Chicago&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+            </pre>
+          </div>
+        </section>
+    
+        <!-- 2. Table with Striped Rows -->
+        <section class="example-box">
+          <h3 class="section-title">2. Table with Striped Rows</h3>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">City</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>New York</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Samuel Brown</td>
+                <td>35</td>
+                <td>Chicago</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="code-box">
+            <pre>
+    &lt;table class="table table-striped"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope="col"&gt;#&lt;/th&gt;
+          &lt;th scope="col"&gt;Name&lt;/th&gt;
+          &lt;th scope="col"&gt;Age&lt;/th&gt;
+          &lt;th scope="col"&gt;City&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;1&lt;/th&gt;
+          &lt;td&gt;John Doe&lt;/td&gt;
+          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;New York&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;2&lt;/th&gt;
+          &lt;td&gt;Jane Smith&lt;/td&gt;
+          &lt;td&gt;25&lt;/td&gt;
+          &lt;td&gt;Los Angeles&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;3&lt;/th&gt;
+          &lt;td&gt;Samuel Brown&lt;/td&gt;
+          &lt;td&gt;35&lt;/td&gt;
+          &lt;td&gt;Chicago&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+            </pre>
+          </div>
+        </section>
+    
+        <!-- 3. Table with Bordered Rows -->
+        <section class="example-box">
+          <h3 class="section-title">3. Table with Bordered Rows</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">City</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>New York</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Samuel Brown</td>
+                <td>35</td>
+                <td>Chicago</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="code-box">
+            <pre>
+    &lt;table class="table table-bordered"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope="col"&gt;#&lt;/th&gt;
+          &lt;th scope="col"&gt;Name&lt;/th&gt;
+          &lt;th scope="col"&gt;Age&lt;/th&gt;
+          &lt;th scope="col"&gt;City&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;1&lt;/th&gt;
+          &lt;td&gt;John Doe&lt;/td&gt;
+          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;New York&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;2&lt;/th&gt;
+          &lt;td&gt;Jane Smith&lt;/td&gt;
+          &lt;td&gt;25&lt;/td&gt;
+          &lt;td&gt;Los Angeles&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;3&lt;/th&gt;
+          &lt;td&gt;Samuel Brown&lt;/td&gt;
+          &lt;td&gt;35&lt;/td&gt;
+          &lt;td&gt;Chicago&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+            </pre>
+          </div>
+        </section>
+    
+        <!-- 4. Table with Hover Rows -->
+        <section class="example-box">
+          <h3 class="section-title">4. Table with Hover Rows</h3>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">City</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>New York</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Samuel Brown</td>
+                <td>35</td>
+                <td>Chicago</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="code-box">
+            <pre>
+    &lt;table class="table table-hover"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope="col"&gt;#&lt;/th&gt;
+          &lt;th scope="col"&gt;Name&lt;/th&gt;
+          &lt;th scope="col"&gt;Age&lt;/th&gt;
+          &lt;th scope="col"&gt;City&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;1&lt;/th&gt;
+          &lt;td&gt;John Doe&lt;/td&gt;
+          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;New York&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;2&lt;/th&gt;
+          &lt;td&gt;Jane Smith&lt;/td&gt;
+          &lt;td&gt;25&lt;/td&gt;
+          &lt;td&gt;Los Angeles&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;3&lt;/th&gt;
+          &lt;td&gt;Samuel Brown&lt;/td&gt;
+          &lt;td&gt;35&lt;/td&gt;
+          &lt;td&gt;Chicago&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+            </pre>
+          </div>
+        </section>
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</html>

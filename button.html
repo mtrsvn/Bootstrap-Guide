@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        body {
+          background-color: #f8f9fa;
+        }
+        .code-box {
+          background-color: #212529;
+          color: #f8f9fa;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          font-family: monospace;
+          white-space: pre-wrap;
+        }
+        .section-title {
+          margin-top: 2rem;
+        }
+        .example-box {
+          margin-bottom: 2rem;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <div class="container py-5">
+        <h1 class="text-center mb-4">Button Guide</h1>
+    
+        <!-- 1. Default Button -->
+        <section class="example-box">
+          <h3 class="section-title">1. Default Button</h3>
+          <button class="btn btn-primary">Primary Button</button>
+          <div class="code-box mt-3">
+            &lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+          </div>
+        </section>
+    
+        <!-- 2. Button Sizes -->
+        <section class="example-box">
+          <h3 class="section-title">2. Button Sizes</h3>
+          <div>
+            <button class="btn btn-secondary btn-lg">Large Button</button>
+            <button class="btn btn-secondary">Default Button</button>
+            <button class="btn btn-secondary btn-sm">Small Button</button>
+          </div>
+          <div class="code-box mt-3">
+            &lt;button class="btn btn-secondary btn-lg"&gt;Large Button&lt;/button&gt;<br>
+            &lt;button class="btn btn-secondary"&gt;Default Button&lt;/button&gt;<br>
+            &lt;button class="btn btn-secondary btn-sm"&gt;Small Button&lt;/button&gt;
+          </div>
+        </section>
+    
+        <!-- 3. Outline Buttons -->
+        <section class="example-box">
+          <h3 class="section-title">3. Outline Buttons</h3>
+          <button class="btn btn-outline-primary">Outline Primary</button>
+          <button class="btn btn-outline-secondary">Outline Secondary</button>
+          <div class="code-box mt-3">
+            &lt;button class="btn btn-outline-primary"&gt;Outline Primary&lt;/button&gt;<br>
+            &lt;button class="btn btn-outline-secondary"&gt;Outline Secondary&lt;/button&gt;
+          </div>
+        </section>
+    
+        <!-- 4. Button States -->
+        <section class="example-box">
+          <h3 class="section-title">4. Button States</h3>
+          <button class="btn btn-success" disabled>Disabled Button</button>
+          <button class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="I am a tooltip">Tooltip Button</button>
+          <div class="code-box mt-3">
+            &lt;button class="btn btn-success" disabled&gt;Disabled Button&lt;/button&gt;<br>
+            &lt;button class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="I am a tooltip"&gt;Tooltip Button&lt;/button&gt;
+          </div>
+        </section>
+    
+        <!-- 5. Button Group -->
+        <section class="example-box">
+          <h3 class="section-title">5. Button Group</h3>
+          <div class="btn-group" role="group">
+            <button class="btn btn-info">Left</button>
+            <button class="btn btn-info">Middle</button>
+            <button class="btn btn-info">Right</button>
+          </div>
+          <div class="code-box mt-3">
+            &lt;div class="btn-group" role="group"&gt;<br>
+            &lt;button class="btn btn-info"&gt;Left&lt;/button&gt;<br>
+            &lt;button class="btn btn-info"&gt;Middle&lt;/button&gt;<br>
+            &lt;button class="btn btn-info"&gt;Right&lt;/button&gt;<br>
+            &lt;/div&gt;
+          </div>
+        </section>
+    
+        <!-- 6. Button with Icons -->
+        <section class="example-box">
+          <h3 class="section-title">6. Button with Icons</h3>
+          <button class="btn btn-warning">
+            <i class="bi bi-house-door-fill"></i> Home
+          </button>
+          <div class="code-box mt-3">
+            &lt;button class="btn btn-warning"&gt;<br>
+            &lt;i class="bi bi-house-door-fill"&gt;&lt;/i&gt; Home<br>
+            &lt;/button&gt;
+          </div>
+        </section>
+    
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</body>
+</html>
